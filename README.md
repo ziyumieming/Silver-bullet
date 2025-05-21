@@ -1,13 +1,5 @@
 # Silver-bullet
 
-ÓĞÒ»ËµÒ»ÎÒÊÇÒ»µã¶ùÒ²²»»áÓÃ¡£Ğ¡º¢×ÓÍæÍæ¶ù°ÕÁË¡£
-ÁíÍâ£¬ÕâÊÇÒ»¸ö²âÊÔ²Ö¿â£¬ÇëºöÂÔ²Ö¿âÖĞµÄÈÎºÎÄÚÈİ¡£
-Õâ¾ä»°ÊÇÒ»¶ÑÂÒÂë£¬ÎÒ²»Ã÷°×ÂÒÂë¶ÔÓ¦µÄÒâË¼¡£
-ÎÒ²»Çå³şÎªºÎÎŞ·¨ÉÏ´«¡£
-?
+å˜¿å˜¿ã€‚è¿™æ˜¯è¯•ç€å¾€Azureä¸Šçš„Function Appä¸Šæ¨é€ä»£ç ã€‚
 
-I don't know how to use it at all. Children are just playing.
-Additionally, this is a testing repository, please ignore any content in the repository.
-This sentence is a pile of garbled code, and I don't understand the meaning of garbled code.
-I'm not sure why it couldn't be uploaded.
-?
+æˆ‘ä¸”å¾—ä¸€ä¸ªã€‚
