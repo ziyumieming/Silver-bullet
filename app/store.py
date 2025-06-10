@@ -43,7 +43,7 @@ class RedisClient(object):
             if len(result):
                 return choice(result)
             else:
-                raise PoolEmptyError
+                print('代理池为空') 
 
     def decrease(self, proxy):
         """

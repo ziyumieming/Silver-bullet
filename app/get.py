@@ -160,7 +160,7 @@ class Crawler(object, metaclass=ProxyMetaclass):
 
 
 class Getter():
-    def __init__(self, redis_key='proxies'):
+    def __init__(self, redis_key='proxies_inner'):
         self.kind=redis_key 
         self.redis = RedisClient(redis_key=redis_key)
         self.crawler = Crawler()

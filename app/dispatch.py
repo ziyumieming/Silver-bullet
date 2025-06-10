@@ -15,26 +15,26 @@ import time
 
 class Scheduler():
     def schedule_tester(self, cycle=TESTER_CYCLE):
-        """
-        定时测试代理
-        """
-        tester = Tester(redis_key='proxies_inner', test_url='http://www.baike.baidu.com')
-        tester = Tester(redis_key='proxies_outer', test_url='https://www.wikipedia.org')
+        testers = [
+            Tester(redis_key='proxies_inner', test_url='http://www.baike.baidu.com'),
+            Tester(redis_key='proxies_outer', test_url='https://www.wikipedia.org')
+        ]
         while True:
             time.sleep(5)
             print('测试器开始运行')
-            tester.run()
+            for tester in testers:
+                tester.run()
             time.sleep(cycle)
 
     def schedule_getter(self, cycle=GETTER_CYCLE):
-        """
-        定时获取代理
-        """
-        getter = Getter(redis_key='proxies_inner')
-        getter = Getter(redis_key='proxies_outer')
+        getters = [
+            Getter(redis_key='proxies_inner'),
+            Getter(redis_key='proxies_outer')
+        ]
         while True:
             print('开始抓取代理')
-            getter.run()
+            for getter in getters:
+                getter.run()
             time.sleep(cycle)
 
     def schedule_api(self):

@@ -11,7 +11,7 @@ redis_client = RedisClient()
 
 def get_conn(redis_key=None):
     # 每次只切换 key，不重新创建 RedisClient
-    redis_client.redis_key = redis_key or 'proxies'
+    redis_client.redis_key = redis_key or 'proxies_inner'
     return redis_client
 
 @app.route('/')
