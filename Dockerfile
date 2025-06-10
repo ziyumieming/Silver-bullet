@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     libffi-dev \
     curl \
-    netcat \
+    redis-server \
     && rm -rf /var/lib/apt/lists/*
 
 # 设置工作目录
@@ -22,7 +22,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 复制项目代码
 COPY . .
 
-RUN apt-get update && apt-get install -y redis-server
 
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
