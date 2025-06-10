@@ -1,0 +1,7 @@
+# 忽略pycache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.log
